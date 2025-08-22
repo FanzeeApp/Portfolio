@@ -17,7 +17,7 @@ const Footer = () => {
             href="tel:+998901234567"
             className="flex items-center space-x-2 hover:text-blue-400"
           >
-            <FaPhone /> <span className="text-sm">+998 90 123 45 67</span>
+            <FaPhone /> <span className="text-sm">+998 95 233 23 53</span>
           </a>
 
           {/* Iconlar */}
