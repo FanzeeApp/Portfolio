@@ -9,6 +9,11 @@ import milk from "../assets/milk.png";
 import invest from "../assets/investors.png";
 import sirus from "../assets/sirus.png";
 import blackwhite from "../assets/blackwhite.png";
+import bumaga from "../assets/bumaga.png";
+import kabel from "../assets/kabel.png";
+import uchsex from "../assets/uchsex.png";
+import yoqilgi from "../assets/yoqilgi.png";
+import { NavLink } from "react-router-dom";
 
 
 // Portfolio loyihalar
@@ -16,25 +21,25 @@ const portfolios = [
   {
     img: childtracker,
     id: 1,
-    title: "Child Tracker platformasi",
+    title: "50,000$ Child Tracker platformasi",
     desc: "BU RAQAMLI DUNYODA BOLA XAVFSIZLIGI UCHUN YANGI STANDART!",
   },
   {
     img: rasm,
     id: 2,
-    title: "O'zbekistonda reklama va sovg'a mahsulotlari ishlab chiqarish",
+    title: "100,000$ O'zbekistonda reklama va sovg'a mahsulotlari ishlab chiqarish",
     desc: "O'zbekiston ruhidagi yuqori sifatli reklama va sovg'a mahsulotlarini ishlab chiqarish hamda sotish.",
   },
   {
     img: gisht,
     id: 3,
-    title: "G'isht loyihasi",
+    title: "1M$ G'isht loyihasi",
     desc: "Turli o'lcham va sifatli g'ishtlar ishlab chiqariladi. Pishgan va xom g'ishtlar mavjud.",
   },
   {
     img: oldmoney,
     id: 4,
-    title: "Old Money ishlab chiqarish biznesi",
+    title: "100,000$ Old Money ishlab chiqarish biznesi",
     desc: "Eng qadimgi va mashhur brendlaridan biri bo'lgan Old Money ishlab chiqarish biznesi.",
   },
   {
@@ -58,33 +63,33 @@ const portfolios = [
   {
     img: blackwhite,
     id: 8,
-    title: "Blue and white simple",
+    title: "30,000$ Blue and white simple",
     desc: "toshkentdan boshlaymiz va butun o'zbekiston bo'ylab qilamiz to'y xizmati qilsak xalqimiz juda xursand bo'ladi chunki ularning muammolari kamroq bo'ladi va pul uchun muammolarni hal qilamiz",
   },
-  // {
-  //   img: invest,
-  //   id: 9,
-  //   title: "Bumaga ishlab chiqarish biznesi",
-  //   desc: "Kelajak O'zbekistonga investitsiya qilish uchun loyiha.",
-  // },
-  // {
-  //   img: invest,
-  //   id: 10,
-  //   title: "Investor.uz loyihasi",
-  //   desc: "Kelajak O'zbekistonga investitsiya qilish uchun loyiha.",
-  // },
-  // {
-  //   img: invest,
-  //   id: 11,
-  //   title: "Investor.uz loyihasi",
-  //   desc: "Kelajak O'zbekistonga investitsiya qilish uchun loyiha.",
-  // },
-  // {
-  //   img: invest,
-  //   id: 12,
-  //   title: "Investor.uz loyihasi",
-  //   desc: "Kelajak O'zbekistonga investitsiya qilish uchun loyiha.",
-  // },
+  {
+    img: bumaga,
+    id: 9,
+    title: "300,000$ Bumaga ishlab chiqarish biznesi",
+    desc: "Ekologik sifatli bumaga ishlab chiqarish uchun loyiha.",
+  },
+  {
+    img: kabel,
+    id: 10,
+    title: "220,000$ СИП кабел va beton opor ishlab chiqarish biznesi",
+    desc: "kabel ishlab chiqarish biznesi, SİP kabellar va beton oporlar ishlab chiqarish uchun loyiha.",
+  },
+  {
+    img: uchsex,
+    id: 11,
+    title: "3,085mlrd uzs, Uchseh beton loyihasi",
+    desc: "Uchseh beton ishlab chiqarish biznesi, yuqori sifatli beton mahsulotlari ishlab chiqarish uchun loyiha.",
+  },
+  {
+    img: yoqilgi,
+    id: 12,
+    title: "150,000$ ASLANBEK OIL GOLD yoqilgi shaxobchasi",
+    desc: "Yoqilg'i mahsulotlari sotish va xizmat ko'rsatish uchun loyiha. O'zbekiston bozorida yuqori sifatli yoqilg'i mahsulotlariga talab yuqori.",
+  },
   // {
   //   img: invest,
   //   id: 13,
@@ -161,15 +166,17 @@ const Home = () => {
                 {item.title}
               </h3>
               <p className="text-gray-600 flex-grow">{item.desc}</p>
+              <NavLink to="/contact">
               <div className="mt-6 text-center">
                 <motion.button
                   whileHover={{ scale: 1.08 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all"
                 >
-                  Batafsil →
+                  Bog'lanish →
                 </motion.button>
               </div>
+              </NavLink>
             </div>
           </motion.div>
         ))}

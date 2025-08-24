@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTelegram, FaPhone, FaInstagram } from "react-icons/fa";
+import {FaTelegram, FaPhone, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,13 +22,10 @@ const Footer = () => {
 
           {/* Iconlar */}
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-blue-500">
-              <FaFacebook size={20} />
-            </a>
-            <a href="#" className="hover:text-blue-400">
+            <a href="https://t.me/successinvest_uz" className="hover:text-blue-400">
               <FaTelegram size={20} />
             </a>
-            <a href="#" className="hover:text-pink-400">
+            <a href="https://www.instagram.com/successinvest.uz/" className="hover:text-pink-400">
               <FaInstagram size={20} />
             </a>
           </div>

@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../assets/logo1.png"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white px-6 py-5 shadow-md">
+    <nav className="bg-gray-900 text-white px-6 py-3 shadow-md">
       <div className="flex items-center justify-between">
+        <div className="flex items-center">
+        <div className="bg-white">
+          <img width={50} height={50} src={logo} alt="" />
+        </div>
         {/* Chap taraf (Logo) */}
         <NavLink
           to="/"
@@ -20,6 +25,7 @@ const Navbar = () => {
         >
           Succes Invest
         </NavLink>
+        </div>
 
         {/* Desktop menyu */}
         <ul className="hidden md:flex gap-8 mr-4 text-lg">
@@ -32,7 +38,7 @@ const Navbar = () => {
                 }`
               }
             >
-              About
+              Biz haqimizda
             </NavLink>
           </li>
           <li>
@@ -56,7 +62,7 @@ const Navbar = () => {
                 }`
               }
             >
-              Contact
+              Kontakt
             </NavLink>
           </li>
         </ul>
@@ -90,7 +96,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                About
+                Biz haqimizda
               </NavLink>
             </li>
             <li>
@@ -116,7 +122,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                Contact
+                Kontakt
               </NavLink>
             </li>
           </motion.ul>
